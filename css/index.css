@@ -1,0 +1,201 @@
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    
+}
+
+/* .imgs-div::before{
+    content: '';
+    padding: 300px;
+    background-color: #CAAEF8;
+    position: absolute;
+    top: 0px;
+    right: -260px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 0px 0px 0px 150px;
+    transform: skew(15deg);
+    padding-left: -90px;
+    max-width: 100vw;
+        overflow-x: hidden;
+} */
+
+.imgs-div::before{
+    content: '';
+    background-color: #CAAEF8;
+    /* padding: 300px; */
+    /* z-index: 0; */
+    overflow-x: hidden;
+    clip-path: polygon(0 0,
+        100% 0,
+        100% 83%,
+        25% 100%);
+}
+
+.imgs-div{
+    position: relative;
+    bottom: 200px;
+    left: 100px;
+    padding-top: 100px;
+    /* max-width: 100vw; */
+        overflow-x: hidden;
+}
+
+.vector-img{
+    position: relative;
+    top: 600px;
+}
+
+.vector-dot{
+    position: relative;
+    top: 510px;
+    right: 45px;
+}
+
+.imgs-div img:nth-of-type(3){
+    position: relative;
+    bottom: 50px;
+}
+
+
+nav{
+    margin: 35px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 120px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-item{
+    margin-left: 60px;
+    color: #242C76;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.signin-btn{
+    padding: 4px 20px;
+    font-size: 16px;
+}
+
+button{
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #965CF2,#FF8ADC);
+    border: 0px solid;
+    color: #FFFFFF;
+}
+
+
+
+/* 
+    INTRO SECTION
+*/
+
+.intro-section{
+    display: flex;
+}
+
+
+.left-section{
+    display: flex;
+    flex-flow: column wrap;
+    float: left;
+    margin: 0px 120px;
+    align-items: flex-start;
+    width: 400px;
+    margin-top: 100px;
+
+}
+
+h1{
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #242c76d6;
+}
+
+h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #202555;
+    line-height: 40px;
+}
+
+.learn-more-btn{
+    padding: 15px 50px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    
+}
+
+
+@media screen and (max-width: 720px){
+    body{
+        width: 720px;
+    }
+
+    .nav-item{
+        font-size: 12px;
+        margin-right: -40px;
+    }
+
+    .nav-items{
+        margin-right: 90px;
+        margin-left: -10px;
+    }
+
+    nav>img{
+        width: 90px;
+    }
+
+    nav{
+        position: relative;
+        right: 70px;
+    }
+
+    .signin-btn{
+        width: 200px;
+        padding: 0px 40px;
+        font-size: 15px;
+    }
+
+    .intro-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgs-div{
+        position: relative;
+        bottom: 50px;
+        left: 200px;
+    }
+
+    .imgs-div img:nth-of-type(3){
+        width: 400px;
+    }
+
+    .vector-dot{
+        top: 0px;
+        width: 10px;
+    }
+
+    .vector-img{
+        top: 0px;
+        width: 40px;
+    }
+
+    .left-section{
+        order: 3;
+    }
+
+
+}
